@@ -20,7 +20,7 @@
       "buttonClasses": "bg-emerald-500 hover:bg-emerald-600 focus:ring-emerald-500"
     },
     {
-      "id": "gamma",
+      "id": "techlearning",
       "title": "Tech Learning",
       "description": "Quick overview of technologies using logical grouping",
       "imageUrl": "techlearning.jpg",
