@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-br from-gray-100 to-blue-100 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-7xl mx-auto">
+        <header class="mb-10 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Project Showcase</h1>
+            <p class="text-lg text-gray-600">A collection of my recent work.</p>
+        </header>
+
+        <main id="project-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <p class="text-gray-500 col-span-full text-center">Loading projects...</p> </main>
+
+        <footer class="mt-12 text-center text-gray-500 text-sm">
+            <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
