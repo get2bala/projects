@@ -21,12 +21,12 @@
     },
     {
       "id": "gamma",
-      "title": "Project Gamma",
-      "description": "A data visualization dashboard created using D3.js to present complex datasets in an interactive and understandable format. Includes various chart types and filtering options.",
-      "imageUrl": "https://placehold.co/600x360/e2e8f0/94a3b8?text=Project+Gamma+Screenshot",
-      "altText": "Project Gamma Screenshot Placeholder",
-      "projectUrl": "#",
-      "buttonText": "View Project",
+      "title": "Tech Learning",
+      "description": "Quick overview of technologies using logical grouping",
+      "imageUrl": "techlearning.jpg",
+      "altText": "Quick overview of technologies using logical grouping",
+      "projectUrl": "https://get2bala.github.io/techlearning",
+      "buttonText": "View Tech Learning",
       "buttonClasses": "bg-pink-500 hover:bg-pink-600 focus:ring-pink-500"
     },
     {
