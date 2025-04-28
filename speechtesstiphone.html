@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Speak Example</title>
+</head>
+<body>
+
+<h1>Speak Demo</h1>
+<button id="speakButton">Speak Now</button>
+
+<script>
+  // Unlock speechSynthesis on first touch for iPhone/iPad
+  document.addEventListener('touchstart', () => {
+    const utterance = new SpeechSynthesisUtterance('');
+    window.speechSynthesis.speak(utterance);
+  }, { once: true });
+
+  function speakText() {
+    const text = "Hello! This is a test of speech synthesis on iPhone.";
+    
+    if (typeof window.speechSynthesis === 'undefined') {
+      alert("Speech synthesis is not supported in this browser.");
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = 'en-US';
+    utterance.pitch = 1;
+    utterance.rate = 1;
+    utterance.volume = 1;
+
+    window.speechSynthesis.speak(utterance);
+  }
+
+  document.getElementById('speakButton').addEventListener('click', speakText);
+</script>
+
+</body>
+</html>
