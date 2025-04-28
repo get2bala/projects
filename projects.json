@@ -30,13 +30,13 @@
       "buttonClasses": "bg-pink-500 hover:bg-pink-600 focus:ring-pink-500"
     },
     {
-      "id": "delta",
-      "title": "Project Delta",
-      "description": "An e-commerce platform with secure payment integration and inventory management features.",
-      "imageUrl": "https://placehold.co/600x360/e2e8f0/94a3b8?text=Project+Delta+Screenshot",
-      "altText": "Project Delta Screenshot Placeholder",
-      "projectUrl": "#",
-      "buttonText": "View Project",
+      "id": "cricket",
+      "title": "Cricket score announcer",
+      "description": "The cricket score announcer checks criclubs latest score and announces at set frequency",
+      "imageUrl": "cricket.jpg",
+      "altText": "Cricket audio score",
+      "projectUrl": "https://get2bala.github.io/cricket/",
+      "buttonText": "Cricclubs audio score ",
       "buttonClasses": "bg-amber-500 hover:bg-amber-600 focus:ring-amber-500"
     },
     {
