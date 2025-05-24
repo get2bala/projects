@@ -58,7 +58,7 @@
       "projectUrl": "#",
       "buttonText": "View Project",
       "buttonClasses": "bg-indigo-500 hover:bg-indigo-600 focus:ring-indigo-500"
-    }
+    },
         {
       "id": "ailearning",
       "title": "AI Personalized Learning",
