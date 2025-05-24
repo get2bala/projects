@@ -59,5 +59,15 @@
       "buttonText": "View Project",
       "buttonClasses": "bg-indigo-500 hover:bg-indigo-600 focus:ring-indigo-500"
     }
+        {
+      "id": "ailearning",
+      "title": "AI Personalized Learning",
+      "description": "Personalized learning generates the course tailored to your requirements.",
+      "imageUrl": "studysmarter.png",
+      "altText": "AI Personalized Learning",
+      "projectUrl": "https://get2bala.github.io/ailearning",
+      "buttonText": "Visit AI Learning",
+      "buttonClasses": "bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500"
+    },
   ]
   
