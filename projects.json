@@ -40,30 +40,10 @@
       "buttonClasses": "bg-amber-500 hover:bg-amber-600 focus:ring-amber-500"
     },
     {
-      "id": "epsilon",
-      "title": "Project Epsilon",
-      "description": "A collaborative tool built with real-time communication features using WebSockets.",
-      "imageUrl": "https://placehold.co/600x360/e2e8f0/94a3b8?text=Project+Epsilon+Screenshot",
-      "altText": "Project Epsilon Screenshot Placeholder",
-      "projectUrl": "#",
-      "buttonText": "View Project",
-      "buttonClasses": "bg-violet-500 hover:bg-violet-600 focus:ring-violet-500"
-    },
-    {
-      "id": "zeta",
-      "title": "Project Zeta",
-      "description": "A content management system (CMS) tailored for bloggers with a focus on simplicity and SEO.",
-      "imageUrl": "https://placehold.co/600x360/e2e8f0/94a3b8?text=Project+Zeta+Screenshot",
-      "altText": "Project Zeta Screenshot Placeholder",
-      "projectUrl": "#",
-      "buttonText": "View Project",
-      "buttonClasses": "bg-indigo-500 hover:bg-indigo-600 focus:ring-indigo-500"
-    },
-    {
       "id": "ailearning",
       "title": "AI Personalized Learning",
       "description": "Personalized learning generates the course tailored to your requirements.",
-      "imageUrl": "studysmarter.png",
+      "imageUrl": "ailearning.png",
       "altText": "AI Personalized Learning",
       "projectUrl": "https://get2bala.github.io/ailearning",
       "buttonText": "Visit AI Learning",
