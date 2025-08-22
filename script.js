@@ -55,20 +55,34 @@ function createProjectCard(project) {
     // Create the main card container
     const card = document.createElement('div');
     // Apply Tailwind classes and custom class for transitions/hover
-    card.className = 'project-card bg-white rounded-xl shadow-md overflow-hidden flex flex-col';
+    card.className = 'project-card bg-white rounded-2xl shadow-md overflow-hidden flex flex-col';
 
-    // Create and append the image
-    const img = document.createElement('img');
-    img.src = project.imageUrl;
-    img.alt = project.altText;
-    img.className = 'project-image'; // Apply CSS class for styling
-    // Fallback image using onerror
-    img.onerror = function() {
-        this.onerror = null; // Prevent infinite loop if fallback also fails
-        this.src = 'https://placehold.co/600x360/cccccc/ffffff?text=Image+Not+Found';
-        this.alt = 'Image Not Found';
-    };
-    card.appendChild(img);
+    // Create and append an SVG icon instead of an image
+    const iconDiv = document.createElement('div');
+    iconDiv.className = 'project-icon flex items-center justify-center h-44 w-full bg-gradient-to-br from-blue-50 to-gray-100';
+    iconDiv.innerHTML = getProjectSVG(project.id);
+    card.appendChild(iconDiv);
+/**
+ * Returns an SVG string based on the project id.
+ * @param {string} id - The project id.
+ * @returns {string} - SVG markup.
+ */
+function getProjectSVG(id) {
+    switch (id) {
+        case 'studysmarter':
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#6366F1"/><path d="M20 44V20h24v24H20zm2-2h20V22H22v20zm4-8h12v2H26v-2zm0-6h12v2H26v-2z" fill="#fff"/></svg>`;
+        case 'aitextviews':
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#10B981"/><rect x="20" y="20" width="24" height="6" rx="2" fill="#fff"/><rect x="20" y="30" width="24" height="6" rx="2" fill="#fff"/><rect x="20" y="40" width="16" height="6" rx="2" fill="#fff"/></svg>`;
+        case 'techlearning':
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#EC4899"/><circle cx="32" cy="32" r="12" fill="#fff"/><path d="M32 20v24M20 32h24" stroke="#EC4899" stroke-width="2" stroke-linecap="round"/></svg>`;
+        case 'cricket':
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#F59E42"/><circle cx="32" cy="32" r="12" fill="#fff"/><path d="M40 24L24 40" stroke="#F59E42" stroke-width="2" stroke-linecap="round"/><circle cx="32" cy="32" r="4" fill="#F59E42"/></svg>`;
+        case 'ailearning':
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#6366F1"/><path d="M32 20a12 12 0 100 24 12 12 0 000-24zm0 2a10 10 0 110 20 10 10 0 010-20zm-2 6h4v8h-4v-8zm0 10h4v2h-4v-2z" fill="#fff"/></svg>`;
+        default:
+            return `<svg width="64" height="64" fill="none" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#CBD5E1"/><text x="32" y="38" text-anchor="middle" fill="#64748B" font-size="18">?</text></svg>`;
+    }
+}
 
     // Create the content container div
     const contentDiv = document.createElement('div');
@@ -96,7 +110,7 @@ function createProjectCard(project) {
     link.target = '_blank'; // Open in new tab
     link.rel = 'noopener noreferrer'; // Security best practice
     // Combine base button classes with project-specific color classes
-    link.className = `project-link mt-auto inline-block text-center text-white font-medium py-2 px-4 rounded-lg transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 ${project.buttonClasses}`;
+    link.className = `project-link mt-auto inline-block text-center text-white font-medium py-2 px-4 rounded-lg transition duration-150 ease-in-out focus:outline-none focus:ring-2 focus:ring-offset-2 bg-gray-800 hover:bg-gray-900`;
     link.textContent = project.buttonText;
     contentDiv.appendChild(link);
 

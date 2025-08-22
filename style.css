@@ -6,35 +6,53 @@ body {
 /* Add a subtle transition for hover effects on cards */
 .project-card {
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-    /* Ensure flex styles are applied if needed, though Tailwind classes in HTML handle this */
     display: flex;
     flex-direction: column;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1.5px solid #e0e7ef;
 }
 
 .project-card:hover {
-    transform: translateY(-5px); /* Lift effect */
-    /* Using Tailwind's shadow-lg equivalent values */
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transform: translateY(-8px) scale(1.025);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-/* Ensure images cover their area nicely */
-.project-image {
-    object-fit: cover;
-    height: 180px; /* Fixed height for consistency */
+/* Project icon container for SVGs */
+.project-icon {
+    height: 180px;
     width: 100%;
-    background-color: #e2e8f0; /* Added a background color for loading state */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: left; /* Align icons to the left */
+    background-color: #f9fafb;
+    border-bottom: 1.5px solid #e0e7ef;
 }
 
-/* Ensure the description area grows */
 .project-description-container {
     flex-grow: 1;
+    margin-bottom: 1.5rem;
+    font-size: 1.13rem;
+    color: #374151;
+    text-align: center;
+    line-height: 1.6;
 }
 
-/* Ensure the link/button stays at the bottom */
+/* Button adjustments */
 .project-link {
-    margin-top: auto; /* Pushes the button to the bottom */
+    margin-top: auto;
+    font-size: 1.08rem;
+    border-radius: 9999px;
+    padding: 0.625rem 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Ensure consistent padding for project icons */
+.project-icon svg {
+    padding: 1rem;
 }
 
 /* Tailwind classes are generally preferred for layout and basic styling. */
 /* This CSS file primarily holds custom styles or overrides if needed. */
-
